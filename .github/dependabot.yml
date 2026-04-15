@@ -1,0 +1,24 @@
+# ============================================================
+# Dependabot Configuration
+# วางไฟล์นี้ไว้ที่: .github/dependabot.yml
+#
+# หน้าที่: คอยอัปเดต GitHub Actions versions อัตโนมัติทุกสัปดาห์
+#          เพื่อให้ Actions รองรับ Node.js version ล่าสุดเสมอ
+# ============================================================
+
+version: 2
+
+updates:
+  # อัปเดต GitHub Actions โดยอัตโนมัติ
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Bangkok"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "chore(ci)"
