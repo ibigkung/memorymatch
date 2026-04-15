@@ -61,7 +61,7 @@ jobs:
 
       # ✅ FIXED: v4 → v6 (รองรับ Node.js 24)
       - name: Upload artifact to GitHub Pages
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           # เปลี่ยน path ให้ตรงกับ output directory ของโปรเจกต์คุณ
           # ตัวอย่าง: './dist' สำหรับ Vite/React, './build' สำหรับ CRA
